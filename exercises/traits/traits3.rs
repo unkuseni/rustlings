@@ -8,10 +8,13 @@
 // Execute `rustlings hint traits3` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
+
+use std::fmt::format;
 
 pub trait Licensed {
-    fn licensing_info(&self) -> String;
+    fn licensing_info(&self) -> String {
+        format!("Some information")
+    }
 }
 
 struct SomeSoftware {
